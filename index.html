@@ -37,19 +37,48 @@
 						</header>
 						<h3>About Me:</h3>
 						<p>I'm Anton Farhoud, a data analyst. I dive deep into data, uncovering insights and trends. I direct my creativity into music, blending the precision of music with the artistry of sound. Whether I'm analyzing complex datasets or crafting melodies, I strive to bring harmony and clarity to every project.</p>
-						<ul class="actions">
-							<li>
-								<a class="learn-more" onclick="toggleDetails()">More:</a>
-							</li>
-						</ul>
-						
-						<!-- Hidden detailed section -->
-						<div id="more-details">
-							<p>I was born on October 4, 1994, in Shefa-'Amr, Israel. In 2002, at the age of 8, I began learning music. In 2003, I was encouraged to play in the church based on my basic music knowledge, which pushed me to learn music independently and grow from my mistakes. Over the years, I improved significantly, eventually becoming a worship leader, band instructor, and a conference coordinator.</p>
-							<p>In 2019, I graduated with honors with a Bachelor's degree in Music from Zefat Academic College. In 2021, I completed a multi-age teaching certificate with honors from Levinsky College of Education in Tel Aviv. I worked for three years in elementary schools, analyzing musical pieces and songs, extracting key elements, and teaching them to my students.</p>
-							<p>In 2024, I completed a Data Analyst course at John Bryce College in Haifa, where I gained comprehensive tools for working as an analyst across various fields, including Python, SQL, Excel, and Power BI.</p>
-							<p>I continue to learn from every experience, whether through self-study, developing new ideas, or taking online courses, all of which contribute to my growing expertise in analysis.</p>
-						</div>
+						<!DOCTYPE html>
+						<html lang="en">
+						<head>
+							<meta charset="UTF-8">
+							<meta name="viewport" content="width=device-width, initial-scale=1.0">
+							<title>Show More Details Example</title>
+							<style>
+								.no-underline {
+									text-decoration: none;
+									color: black; /* Maintain the color if needed */
+									cursor: pointer; /* Makes it clear that "More" is clickable */
+								}
+								#more-details {
+									display: none; /* Initially hide the details */
+								}
+							</style>
+						</head>
+						<body>
+
+							<span class="no-underline" onclick="toggleDetails()"><u>More:</u></span>
+
+							<!-- Hidden detailed section -->
+							<div id="more-details">
+								<p>I was born on October 4, 1994, in Shefa-'Amr, Israel. In 2002, at the age of 8, I began learning music. In 2003, I was encouraged to play in the church based on my basic music knowledge, which pushed me to learn music independently and grow from my mistakes. Over the years, I improved significantly, eventually becoming a worship leader, band instructor, and a conference coordinator.</p>
+								<p>In 2019, I graduated with honors with a Bachelor's degree in Music from Zefat Academic College. In 2021, I completed a multi-age teaching certificate with honors from Levinsky College of Education in Tel Aviv. I worked for three years in elementary schools, analyzing musical pieces and songs, extracting key elements, and teaching them to my students.</p>
+								<p>In 2024, I completed a Data Analyst course at John Bryce College in Haifa, where I gained comprehensive tools for working as an analyst across various fields, including Python, SQL, Excel, and Power BI.</p>
+								<p>I continue to learn from every experience, whether through self-study, developing new ideas, or taking online courses, all of which contribute to my growing expertise in analysis.</p>
+							</div>
+
+							<script>
+								function toggleDetails() {
+									var details = document.getElementById("more-details");
+									if (details.style.display === "none") {
+										details.style.display = "block";
+									} else {
+										details.style.display = "none";
+									}
+								}
+							</script>
+
+						</body>
+						</html>
 						
 						<!-- CSS -->
 						<style>
@@ -166,7 +195,7 @@
 				<!-- Three -->
 				 
 					<section id="three">
-						<h2>Get In Touch</h2>
+						<h2 style="color: black;">Get In Touch</h2>
 						<p>Have questions or need assistance? Feel free to get in touch with me through our contact form, and I'll get back to you as soon as possible!</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
